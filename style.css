@@ -1,0 +1,40 @@
+*{
+    background: fixed;
+    background-color: aquamarine;
+}
+    
+
+
+
+.header h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    left: 30%;
+    width: 700px;
+    height: 120px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 100px;   
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+.netflix{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 45%;
+
+}
+
