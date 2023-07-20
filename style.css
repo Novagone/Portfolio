@@ -1,40 +1,246 @@
-*{
+
+
+
+body{
     background: fixed;
-    background-color: aquamarine;
-}
-    
-
-
-
-.header h1{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    font-weight: 300px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    left: 30%;
-    width: 700px;
-    height: 120px;
-    background: rgba(0,0,0,.5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 100px;   
-    align-items: center;
-}
-
-.search{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5%;
-    margin-top: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(99, 93, 93, 0.7)), url(images/Metal-background-5.jpg);
+    margin: 0;
 }
 
 .netflix{
     display: flex;
-    align-items: flex-end;
     position: absolute;
-    left: 45%;
+    transform: translate(20px,70px);
+    height: 10px;
+}
+
+
+
+
+.login{
+    display: flex;
+    position: absolute;
+    transform: translate(1650px,70px);
+    height: 10px;
+}
+
+
+
+
+
+body > div > a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    background-color: #31312f;
+    justify-content: center;
+    margin: 10px;
+    height: 40px;
+
+    
+    
+    
+}
+
+
+.login a:hover{
+    background: #1a1a41;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4b5257,
+                0 0 25px #353d4e,
+                0 0 50px #aca9e2,
+                0 0 100px #0a0a0a;
+    
+    
+}
+
+.netflix a:hover{
+    background: #1a1a41;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4b5257,
+                0 0 25px #353d4e,
+                0 0 50px #aca9e2,
+                0 0 100px #0a0a0a;
+    
+}
+
+.cv{
+    display: flex;
+    align-items: center;    
+    position: absolute;
+    bottom: 100px;
+}
+
+.work-experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #535457;
+    border-radius: 5%;
+    height: 80px;
 
 }
 
+
+
+.navigation{
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+    right: 0;
+    left: 0 ;
+    background-color: rgb(71, 71, 78);
+    box-sizing: border-box;
+    box-shadow: 0px 17px 59px 11px rgba(233, 233, 233, 0.62)
+    
+
+}
+
+
+.navigation h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1100ff;
+    background-image: -webkit-linear-gradient(
+        0deg,
+        #4d40ff 0%,
+        #5aa0d1 46%,
+        #ff0000 86%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+
+ul{
+    position: relative;
+    height: 70px;
+    left: 1400px;
+
+}
+
+li{
+    display: inline-block;
+    margin-left: 0px;
+    width: 90px;
+    height: 40px;
+    padding-top: 10px;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+a{
+    color: white;
+
+}
+
+.netflix img{
+    height: 250px;
+    display: block;
+    transform: translate(-275px, 100px);
+    border-color: #31312f;
+    border-radius: 50px;
+    border-width: 1000px;
+    
+
+
+}
+
+
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1500px;
+    padding: 40px;
+    transform: translate(-50%, 150%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+    
+.login-box h2 {
+margin: 0 0 30px;
+padding: 0;
+color: #fff;
+text-align: center;
+
+}
+
+.login-box .user-box {
+position: relative;
+}
+
+.login-box .user-box input {
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
+}
+.login-box .user-box label {
+position: absolute;
+top:0;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+top: -20px;
+left: 0;
+color: #03e9f4;
+font-size: 12px;
+}
+
+.login-box form a {
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+color: #03e9f4;
+font-size: 16px;
+text-decoration: none;
+text-transform: uppercase;
+overflow: hidden;
+transition: .5s;
+margin-top: 40px;
+letter-spacing: 4px
+}
+
+
+.login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
