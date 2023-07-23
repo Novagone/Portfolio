@@ -1,3 +1,7 @@
+
+
+
+
 body::-webkit-scrollbar{ 
     display: none;
 
@@ -44,8 +48,8 @@ footer{
 
 
 
-
-body > div > a{
+body div > a{
+    
     padding: 10px 20px;
     text-decoration: none;
     color: rgb(138, 138, 138);
@@ -162,7 +166,7 @@ body > div > a{
 nav{
     position: relative;
     height: 70px;
-    left: 1400px;
+    left: 1350px;
 
 }
 
@@ -172,7 +176,7 @@ li{
     width: 90px;
     height: 40px;
     padding-top: 25px;
-    margin-left: 10px;
+    margin-left: 0px;
     font-weight: bold;
     list-style: none;
     text-align: center;
@@ -315,4 +319,24 @@ letter-spacing: 4px
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+.list img{
+    display: flex;
+    position: fixed;
+    height: 50px;
+    transform: translate(3650%,-150%);
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    
+    
+}
+
+.dark-mode{
+    background: fixed;
+    background-image: url(images/Metal-background-5.jpg);
+    margin: 0;
+    scrollbar-width: 2px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
