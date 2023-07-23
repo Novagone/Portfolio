@@ -27,7 +27,12 @@ footer{
 }
 
 
-
+.shop{
+    display: flex;
+    position: absolute;
+    transform: translate(850px,70px);
+    height: 10px;
+}
 
 .login{
     display: flex;
@@ -80,6 +85,18 @@ body > div > a{
                 0 0 25px #353d4e,
                 0 0 50px #aca9e2,
                 0 0 100px #0a0a0a;
+    
+}
+
+.shop a:hover{
+    background: #1a1a41;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4b5257,
+                0 0 25px #353d4e,
+                0 0 50px #aca9e2,
+                0 0 100px #0a0a0a;
+    
     
 }
 
@@ -179,6 +196,15 @@ li{
 }
 
 .login img{
+    height: 250px;
+    display: block;
+    transform: translate(-275px, 100px);
+    border-color: #31312f;
+    border-radius: 50px;
+    border-width: 1000px;
+}
+
+.shop img{
     height: 250px;
     display: block;
     transform: translate(-275px, 100px);
