@@ -1,3 +1,7 @@
+body::-webkit-scrollbar{ 
+    display: none;
+
+}
 
 
 
@@ -5,6 +9,14 @@ body{
     background: fixed;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(99, 93, 93, 0.7)), url(images/Metal-background-5.jpg);
     margin: 0;
+    scrollbar-width: 2px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+}
+
+footer{
+    height: 1570px;
 }
 
 .netflix{
@@ -74,17 +86,23 @@ body > div > a{
 .cv{
     display: flex;
     align-items: center;    
-    position: absolute;
-    bottom: 100px;
+    flex-direction: column;
+    opacity: 60%;
+    left: 50%;
+    right: 50%;
+    transform: translate(0%,50%);
 }
 
-.work-experience{
+.cv h1{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    background-color: #535457;
-    border-radius: 5%;
-    height: 80px;
+    background-color: #0a0a0a;
+    border: #03e9f4;
+    height: 400px;
+    width: 1900px;
+    transform: translate(0px, 300px);
+    color: #fff;
+    
 
 }
 
@@ -124,7 +142,7 @@ body > div > a{
 
 }
 
-ul{
+nav{
     position: relative;
     height: 70px;
     left: 1400px;
@@ -136,7 +154,8 @@ li{
     margin-left: 0px;
     width: 90px;
     height: 40px;
-    padding-top: 10px;
+    padding-top: 25px;
+    margin-left: 10px;
     font-weight: bold;
     list-style: none;
     text-align: center;
@@ -144,8 +163,9 @@ li{
 
 }
 
-a{
+.list a{
     color: white;
+    
 
 }
 
@@ -156,20 +176,25 @@ a{
     border-color: #31312f;
     border-radius: 50px;
     border-width: 1000px;
-    
-
-
 }
 
-
+.login img{
+    height: 250px;
+    display: block;
+    transform: translate(-275px, 100px);
+    border-color: #31312f;
+    border-radius: 50px;
+    border-width: 1000px;
+}
 
 .login-box {
     position: absolute;
-    top: 50%;
     left: 50%;
-    width: 1500px;
+    
+    width: 1600px;
     padding: 40px;
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, 230%);
+    height: 450px;
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -243,4 +268,25 @@ letter-spacing: 4px
                 0 0 25px #03e9f4,
                 0 0 50px #03e9f4,
                 0 0 100px #03e9f4;
-  }
+}
+
+.navigation {
+    transition: transform 0.5s ease;
+}
+
+
+
+.navigation:hover {
+    transform: translateY(-5px);
+}
+
+.foot{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

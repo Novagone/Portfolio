@@ -6,10 +6,6 @@
     <title>E-portfolio</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="icon" type="images/x-icon" href="images/Screenshot 2023-07-18 201847.png" />
-
-    
-   
-
 </head>
 
 <body>
@@ -17,23 +13,27 @@
     <header>
     <div class="navigation">
         <h1>Joe Hand's Portfolio</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#work-experience">About Me</a></li>
-            <li><a href="#education">Product</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="list">
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </div>
+        
     </div>
 
     
     
-</header>
+    </header>
     
 
 
     <div class="login">
         <a href="https://novagone.github.io/login-func/">Login tool</a>
+        <img src="images/Screenshot 2023-07-22 185811.png">
     </div>
 
     <div class="netflix">
@@ -43,29 +43,56 @@
 
 
 
-    <section>
-        <div class="cv">
-            <div class="headers">
-                <div class="education" id="education">
-                    <h1>Education</h1>
-                </div>
-                <div class="references">
-                    <h1>References</h1>
-                </div>
-                <div class="work-experience">
-                    <h1>Work Experience</h1>
-                    <h3>Worked at MHR, a payroll and HR software company for 1 week in year 10</h3>
-                </div>
-                
-                
-
-
+    
+    <div class="cv">
+            <div class="about" id="about">
+                <h1>About Me</h1>
+            </div>
+            <div class="products" id="products">
+                <h1>Products</h1>
+            </div>
             
+            <div class="education" id="education">
+                <h1>Education</h1>
+            </div>
+            
+            
+
+    </div>
+
+    <footer>
+        <div class="login-box" id="contact">
+            <h2>Contact</h2>
+            <form>
+                <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Name</label>
+                </div>
+                <div class="user-box">
+                <input type="tel" name="" required="">
+                <label>Phone number</label>
+                </div>
+                <div class="user-box">
+                <input type="email" name="" required="">
+                <label>Email</label>
+                </div>
+                <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+                </a>
+            </form>
             </div>
         </div>
-
     
-    </section>
+    
+        <div class="foot">
+            <p>&copy; 2023 Joe Hand's Portfolio</p>
+        </div>
+    </footer>
+    
     
     
 
@@ -76,33 +103,7 @@
 </body>
 
 
-<footer>
-    <div class="login-box">
-        <h2>Contact</h2>
-        <form>
-            <div class="user-box">
-            <input type="text" name="" required="">
-            <label>Name</label>
-            </div>
-            <div class="user-box">
-            <input type="tel" name="" required="">
-            <label>Phone number</label>
-            </div>
-            <div class="user-box">
-            <input type="email" name="" required="">
-            <label>Email</label>
-            </div>
-            <a href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Submit
-            </a>
-        </form>
-        </div>
-    </div>
-</footer>
+
 
 
 

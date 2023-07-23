@@ -1,0 +1,86 @@
+
+
+
+
+body{
+    background: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(99, 93, 93, 0.7)), url(images/Metal-background-5.jpg);
+    margin: 0;
+    scrollbar-width: 2px;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.mb-3{
+    color: white;
+    font-family: monospace;
+    font-size: x-large;
+
+}
+
+.navigation{
+    position: fixed;
+    z-index: 100;
+    height: 70px;
+    right: 0;
+    left: 0 ;
+    top: 0;
+    background-color: rgb(71, 71, 78);
+    
+    
+    
+
+}
+
+
+.navigation h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1100ff;
+    background-image: -webkit-linear-gradient(
+        0deg,
+        #4d40ff 0%,
+        #5aa0d1 46%,
+        #ff0000 86%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+
+nav{
+    position: relative;
+    height: 70px;
+    left: 1400px;
+
+}
+
+li{
+    display: inline-block;
+    margin-left: 0px;
+    width: 90px;
+    height: 40px;
+    padding-top: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.list a{
+    color: white;
+    
+
+}
+
+
+form{
+    transform: translate(0%, 50%);
+}
